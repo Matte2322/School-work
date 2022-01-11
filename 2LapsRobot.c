@@ -2,6 +2,7 @@
 
 task main()
 {
+	displayCenteredBigTextLine(3, "DoorMat");
 	wait1Msec(2000);						// Robot waits for 2000 milliseconds before executing program
 
 	for(int repeats = 0; repeats <= 8; repeats++) { // repeats 8 times to make 2 laps
