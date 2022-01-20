@@ -7,14 +7,14 @@
 #pragma config(Motor,  motorC,          leftMotor,          tmotorNormal, PIDControl, encoder)
 
 /************************************\
-|*  Programmer: Matthew Chen        *|
+|*  Programmer: DoorMat             *|  
 |*                                  *|
 |*  Task: Robotics Academy          *|
 |*  Robot: Buggy Bot                *|
 \************************************/
 void driveStraight(int powerlevel){
-		motor[rightMotor] = powerlevel;
-		motor[leftMotor] = powerlevel;
+	motor[rightMotor] = powerlevel;
+	motor[leftMotor] = powerlevel;
 }
 
 void turnRight90(int turningRight, int turningRight1){
