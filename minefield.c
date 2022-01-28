@@ -29,7 +29,7 @@ void turn90Left(int wheelLeft, int wheelRight)
 
 task main()
 {
-		int maximumSpeed = 100;
+    int maximumSpeed = 100;
     displayTextLine(3,"DoorMat");
 
     goForward(maximumSpeed);
