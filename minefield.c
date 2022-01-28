@@ -7,6 +7,7 @@
 #pragma config(Motor,  motorC,          leftMotor,          tmotorNormal, PIDControl, encoder)
 
 // forked from John Lugo's code
+// Buggy Bot
 void goForward(int powerLevel)
 {
 	motor[leftMotor] = powerLevel;
