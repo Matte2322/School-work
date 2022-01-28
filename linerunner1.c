@@ -7,6 +7,7 @@
 #pragma config(Motor,  motorC,          leftMotor,          tmotorNormal, PIDControl, encoder)
 
 // inconsistent code
+// REM bot
 
 void moveForward(int powerLevel) // determine powerlevel either moving forward or backward
 {
