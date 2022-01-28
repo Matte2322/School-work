@@ -39,15 +39,15 @@ task main()
 
     int repeats = 0;
     while(repeats <= 2)
-		{
-  		if(SensorValue(sonarSensor) < 30)
- 			{
-      	turn90Right(50, 0);
-      	wait1Msec(1000);
+    {
+  	if(SensorValue(sonarSensor) < 30)
+ 	{
+      		turn90Right(50, 0);
+      		wait1Msec(1000);
 
-      	repeats++;
-  		}
-	 }
+      		repeats++;
+  	}
+    }
 	 goForward(maximumSpeed);
 	 wait1Msec(450);
 
@@ -72,12 +72,12 @@ task main()
 	 int repeats1 = 0;
 	 while(repeats1 <= 2)
 	 {
-	 		if(SensorValue(sonarSensor) < 30)
-	 		{
-	 			turn90Left(0, 100);
-	 			wait1Msec(1200);
-	 			repeats1++;
-	 		}
+		if(SensorValue(sonarSensor) < 30)
+	 	{
+	 		turn90Left(0, 100);
+	 		wait1Msec(1200);
+	 		repeats1++;
+	 	}
 	 }
 	 goForward(maximumSpeed);
 	 wait1Msec(400);
