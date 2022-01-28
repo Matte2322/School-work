@@ -18,7 +18,7 @@ task main()
 {
 	int fullPower = 100;
 	//int fullStop = 0;
-	int partialPower = 75;
+	//int partialPower = 75;
 	bool foundBlack = false;
 	int lineCount = 0;
 	//int repeats = 0;
