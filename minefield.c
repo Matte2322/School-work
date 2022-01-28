@@ -6,7 +6,7 @@
 #pragma config(Motor,  motorB,          rightMotor,         tmotorNormal, PIDControl, encoder)
 #pragma config(Motor,  motorC,          leftMotor,          tmotorNormal, PIDControl, encoder)
 
-
+// forked from John Lugo's code
 void goForward(int powerLevel)
 {
 	motor[leftMotor] = powerLevel;
