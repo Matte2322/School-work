@@ -16,29 +16,47 @@ task main()
 {
 	int fullPower = 100;
 	//int fullStop = 0;
+	int partialPower = 50;
 	bool foundBlack = false;
 	int lineCount = 0;
-	
+	//int repeats = 0;
+
 	displayBigTextLine(3, "DoorMat");
-	
+
 	while(true)
 	{
-		moveForward(fullPower);
-		if(sensorValue(lightSensor) < 45)
+
+    if(SensorValue(lightSensor) < 30)
 		{
-			foundBlack = true;		
+			foundBlack = true;
 		}
-		
-		if(foundBlack && sensorValue(lightSensor) >= 45)
+
+		if(foundBlack && SensorValue(lightSensor) >= 30)
 		{
 			foundBlack = false;
 			lineCount++;
 		}
-		
+
 		displayTextLine(5, "line #: %d", lineCount);
-		if(lineCount == 0) 
+
+		if(SensorValue(lightSensor) > 30)
 		{
-			continue;		
+			moveForward(partialPower);
+		}
+
+		if(lineCount == 1)
+		{
+		 	--lineCount;
+			moveForward(-fullPower);
+			wait1Msec(1000);
+			continue;
+		}
+		else if(lineCount == 2)
+		{
+			--lineCount;
+			moveForward(-fullPower);
+			wait1Msec(2000);
+			continue;
 		}
 	}
 }
